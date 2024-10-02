@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Before the Script....</p>
+
+    <script>
+        // use script helps you write more secure code
+        "use strict";
+        alert("Hello World");
+
+        let user = "Ammar", age = 21;
+        let message = "Hello" + user + age;
+        alert(message);
+
+        // var is accessible outside of the block {} but let is not
+        if (true) {
+            var x = 10;
+        }
+        console.log(x);
+
+        // const value cannot be re-assign / modified
+        const myBirthday = "28-02-2003";
+
+        let hello = "Ammar";
+        let world = hello;
+        alert(hello);
+        alert(world);
+    </script>
+
+    <p>After the Script....</p>
+</body>
+
+</html>
