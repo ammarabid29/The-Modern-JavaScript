@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculatePower(x, n) {
+            let result = 1;
+            for (let i = 0; i < n; i++) {
+                result *= x;
+            }
+            return result;
+        }
+
+        console.log(calculatePower(3, 2));   // Output: 9
+        console.log(calculatePower(3, 3));   // Output: 27
+        console.log(calculatePower(1, 100)); // Output: 1
+
+    </script>
+</body>
+
+</html>

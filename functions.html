@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // global variable 
+        // let name = "Ammar";
+        // function showMessage() {
+        //     name = "Abid";
+        //     // local variable 
+        //     let message = "Hello " + name;
+        //     alert(message);
+        // }
+        // alert(name);
+        // showMessage();
+        // alert(name);
+
+        // function showMessage(from, message) {
+        //     alert(message + " " + from);
+        // }
+        // showMessage("Ammar", "Hello");
+        // showMessage("Abid", "Hi");
+
+
+        // function showMessage(from, message="No Message provided!") {
+        //     alert(message + " " + from);
+        // }
+        // showMessage("Ammar", "Hello");
+        // showMessage("Abid");
+
+        // function showMessage(message) {
+        //     message = message || "No Message";
+        //     alert(message);
+        // }
+        // showMessage();
+
+        // function showCount(count){
+        //     count=count??"unknown";
+        //     alert(count);
+        // }
+        // showCount(0);
+        // showCount(undefined);
+        // showCount(null);
+        // showCount();
+
+        function checkAge(age) {
+            if (age >= 18) {
+                return true;
+            } else {
+                return confirm("Have you permission from your parents?");
+            }
+        }
+        function showMovie(age){
+            if(!checkAge(age)){
+                return;
+            }
+            alert("showing you movie!");
+        }
+
+        let age = prompt("Enter your age: ", 18);
+        if (checkAge(age)) {
+            alert("Access Granted!");
+        } else {
+            alert("access denied!");
+        }
+        showMovie(age);
+
+    </script>
+</body>
+
+</html>

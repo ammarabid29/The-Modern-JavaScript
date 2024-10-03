@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Using the question mark operator ?:
+        // function isEligibleForDiscount(age) {
+        //     let accessDiscount = age >= 18 ? true :  confirm('Are you eligible for a movie ticket discount?');
+        //     return accessDiscount;
+        // }
+        // alert(isEligibleForDiscount(19));
+
+
+        // Using the logical OR ||:
+        function isEligibleForDiscount(age) {
+            let accessDiscount = age >= 18 || confirm('Are you eligible for a movie ticket discount?');
+            return accessDiscount;
+        }
+        alert(isEligibleForDiscount(12));
+    </script>
+</body>
+
+</html>
