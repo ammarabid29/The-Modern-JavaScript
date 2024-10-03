@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // switch case 
+        // let a = 2;
+        // switch (a) {
+        //     case 3: alert("too small!");
+        //         break;
+        //     case 4: alert("Exactly!");
+        //         break;
+        //     case 5: alert("too big!");
+        //         break;
+        //     default: alert("I don't know!");
+        // }
+
+        // let age = +prompt("Enter your age ", "");
+        // switch (true) {
+        //     case (age < 0): alert("invalid age!");
+        //         break;
+
+        //     default: alert(`You are ${age * 365} days old!`);
+        // }
+
+        // grouping of case
+        let age = +prompt("Enter your age ", "");
+        switch (true) {
+            case (age < 0):
+            case (age > 100): alert("invalid age!");
+                break;
+            default: alert(`You are ${age * 365} days old!`);
+        }
+
+    </script>
+</body>
+
+</html>

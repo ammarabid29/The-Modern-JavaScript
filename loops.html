@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //while loop
+        // let i = 0;
+        // while (i < 3) {
+        //     alert(i);
+        //     i++;
+        // }
+        // let i = 3;
+        // while (i) alert(i--);
+
+        // do while loop 
+        // let i = 3;
+        // do {
+        //     alert(i);
+        //     i++;
+        // } while (i < 3);
+
+        // for loop 
+        // for (let i = 0; i < 3; i++) {
+        //     alert(i);
+        // }
+
+        // for(;;){
+        //     alert("Ammar");
+        // }
+
+        // break 
+        // let sum = 0;
+        // while (true) {
+        //     let number = +prompt("Enter a number:", "");
+        //     if (!number) break;
+        //     sum += number;
+        // }
+        // alert("sum: " + sum);
+
+        // continue 
+        // for (let i = 0; i < 10; i++) {
+        //     if (i % 2 == 0) continue;
+        //     alert(i);
+        // }
+
+        // for (let i = 0; i < 10; i++) {
+        //     if (i % 2 == 0) continue;
+        //     alert(i);
+        // }
+
+        // outer 
+        outer: for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                let input = prompt(`Value at coordinate for ${i} and ${j}: `, "");
+                if (!input) break outer;
+            }
+        }
+        alert("Done!");
+
+
+    </script>
+</body>
+
+</html>
